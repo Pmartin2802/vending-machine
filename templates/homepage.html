@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="homepage">
+    <div class="container">
+        <h2>Welcome To Health Parlour</h2>
+        
+        <div class="flex-container">
+            <div class="about-section">
+                <h3>About Us</h3>
+                <div class="about-content">
+                    <p>Description of your business goes here.</p>
+                </div>
+            </div>
+            
+            <div class="products-section">
+                <h3>Our Products</h3>
+                <div class="products-content">
+                    <p>List of your products goes here.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="button-container">
+            <a href="/waitlist" class="button">Join Waitlist</a>
+        </div>
+    </div>
+    
+</body>
+</html>

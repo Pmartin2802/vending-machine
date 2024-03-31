@@ -1,0 +1,107 @@
+/* Shared styles for both homepage.html and about.html */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #8db7ff; /* Initial background color (lighter blue) */
+    animation: colorTransition 10s infinite alternate; /* Animation for color transition */
+    position: relative;
+}
+
+@keyframes colorTransition {
+    0% {
+        background-color: #007bff; /* Start color (lighter blue) */
+    }
+    100% {
+        background-color: #ff7b00; /* End color (more red than pink) */
+    }
+}
+
+.container {
+    max-width: 800px; /* Adjust container width as needed */
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff; /* Container background color */
+    border-radius: 10px; /* Increased border radius for smoother edges */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+    display: flex; /* Use flexbox for centering */
+    flex-direction: column; /* Align items vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+h2 {
+    text-align: center;
+    color: #333333; /* Text color */
+}
+
+label {
+    display: block;
+    margin-bottom: 10px; /* Increased margin for better spacing */
+    color: #666666; /* Label color */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    width: 100%;
+    padding: 12px; /* Increased padding for better input field size */
+    margin-bottom: 20px;
+    border: 1px solid #cccccc; /* Border color */
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 15px; /* Increased padding for buttons */
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transition for hover effect */
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.about-section,
+.products-section {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff; /* Box background color */
+    margin-bottom: 20px; /* Add space between sections */
+}
+
+.about-section h3,
+.products-section h3 {
+    text-align: center;
+    color: #333333; /* Text color */
+    margin-bottom: 20px; /* Add a small margin below the heading */
+}
+
+.about-content,
+.products-content {
+    text-align: center;
+}
+
+.button-container {
+    text-align: center;
+}
+
+.button {
+    padding: 15px 25px; /* Increased padding for buttons */
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none; /* Remove default underline */
+    transition: background-color 0.3s ease; /* Transition for hover effect */
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
