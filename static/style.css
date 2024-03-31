@@ -3,20 +3,20 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #8db7ff; /* Initial background color (lighter blue) */
+    background-color: #000000; /* Initial background color (lighter blue) */
     animation: colorTransition 10s infinite alternate; /* Animation for color transition */
     position: relative;
 }
-
+/*
 @keyframes colorTransition {
     0% {
-        background-color: #007bff; /* Start color (lighter blue) */
+        background-color: #000000;
     }
     100% {
-        background-color: #ff7b00; /* End color (more red than pink) */
+        background-color: #ffffff ;
     }
 }
-
+*/
 .container {
     max-width: 800px; /* Adjust container width as needed */
     margin: 50px auto;
@@ -24,10 +24,11 @@ body {
     background-color: #ffffff; /* Container background color */
     border-radius: 10px; /* Increased border radius for smoother edges */
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
-    display: flex; /* Use flexbox for centering */
-    flex-direction: column; /* Align items vertically */
-    align-items: center; /* Center items horizontally */
+    position: absolute; /* Position absolute */
+    left: 300px; /* Adjust this value to match the width of the sidebar */
+    right: 0; /* Stick to the right-hand side of the screen */
 }
+
 
 h2 {
     text-align: center;
@@ -54,7 +55,7 @@ input[type="tel"] {
 input[type="submit"] {
     width: 100%;
     padding: 15px; /* Increased padding for buttons */
-    background-color: #007bff;
+    background-color: #000000;
     color: #ffffff;
     border: none;
     border-radius: 5px;
@@ -93,7 +94,7 @@ input[type="submit"]:hover {
 
 .button {
     padding: 15px 25px; /* Increased padding for buttons */
-    background-color: #007bff;
+    background-color: #111;
     color: #ffffff;
     border: none;
     border-radius: 5px;
@@ -104,4 +105,37 @@ input[type="submit"]:hover {
 
 .button:hover {
     background-color: #0056b3;
+}
+
+/* Sidebar styling */
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333; /* Darker background */
+    padding-top: 20px;
+    transition: width 0.5s; /* Smooth width transition */
+    z-index: 1000; /* Ensure the sidebar is above other content */
+    border-top-left-radius: 20px; /* Curved top-left corner */
+    border-bottom-left-radius: 20px; /* Curved bottom-left corner */
+}
+/* Style for the links in the sidebar */
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 16px; /* Slightly smaller font size */
+    color: #fff; /* White text */
+    display: block;
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+/* Change the color of links when hovered */
+.sidebar a:hover {
+    background-color: #0056b3; /* Darker background on hover */
+}
+/* Content area style */
+.content {
+    margin-left: 250px; /* Adjust this value to match the width of the sidebar */
+    padding: 20px;
 }

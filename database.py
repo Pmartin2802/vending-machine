@@ -14,9 +14,19 @@ def waitlist():
 
 @app.route('/')
 def index():
-    start_color = '#ff0000'  # Red color
-    end_color = '#007bff'    # Blue color
-    return render_template('homepage.html', start_color=start_color, end_color=end_color)
+    return render_template('homepage.html')
+
+@app.route('/homepage')
+def homepage():
+    return render_template('homepage.html')
+
+@app.route('/about')
+def about():
+    return render_template('about.html');
+
+@app.route('/products')
+def products():
+    return render_template('products.html');
 
 
 @app.route('/submit', methods=['POST'])

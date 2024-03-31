@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <a href="/homepage" class="button">Home</a>
+        <a href="/about" class="button">About Us</a>
+        <a href="/products" class="button">Our Products</a>
+        <a href="/waitlist" class="button">Join Waitlist</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h2>Our Products</h2>
+        
+        <!-- Split layout -->
+        <div class="split-container">
+            <!-- Left side: Description -->
+            <div class="product-description">
+                <h3>Product Description</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget quam quis nulla consectetur mollis. Nulla facilisi. Phasellus tempus, ex et dapibus ultrices, arcu lorem vestibulum eros, vel euismod magna mi nec dolor. Nullam efficitur purus quis libero laoreet, in facilisis purus feugiat. Sed non convallis justo.</p>
+            </div>
+            
