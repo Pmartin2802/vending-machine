@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+
 </head>
 <body class="homepage">
     <!-- Sidebar -->
     <div class="sidebar">
         <a href="/homepage" class="button">Home</a>
         <a href="/about" class="button">About Us</a>
-        <a href="/products"class="button">Our Products</a>
-        <a href="/waitlist" class="button">Join Waitlist</a> <!-- Button added to sidebar -->
+        <a href="/products" class="button">Our Products</a>
+        <a href="/waitlist" class="button">Join Waitlist</a>
     </div>
 
     <!-- Main Content -->
@@ -20,11 +21,9 @@
         <h2>Health Parlour</h2>
         
         <div class="flex-container">
-            <div class="about-section">
-                <h3>About Us</h3>
-                <div class="about-content">
-                    <p>Welcome to Health Parlour. Our product is blah. Currently there is a waitlist of blah. Have a browse if this product is for you</p>
-                </div>
+            <div class="about-content">
+                <h3>Welcome to Health Parlour.</h3>
+                <h4>The current waitlist for the product is: number</h4>
             </div>
         </div>
         
@@ -32,5 +31,6 @@
             <a href="/waitlist" class="button">Join Waitlist</a>
         </div>
     </div>
+
 </body>
 </html>

@@ -1,13 +1,13 @@
 /* Shared styles for both homepage.html and about.html */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #000000; /* Initial background color (lighter blue) */
     animation: colorTransition 10s infinite alternate; /* Animation for color transition */
     position: relative;
 }
-/*
+
 @keyframes colorTransition {
     0% {
         background-color: #000000;
@@ -16,8 +16,9 @@ body {
         background-color: #ffffff ;
     }
 }
-*/
+
 .container {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     max-width: 800px; /* Adjust container width as needed */
     margin: 50px auto;
     padding: 20px;
@@ -29,16 +30,18 @@ body {
     right: 0; /* Stick to the right-hand side of the screen */
 }
 
-
 h2 {
     text-align: center;
     color: #333333; /* Text color */
+    font-size: 2.5em; /* Larger font size for heading */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Text shadow for depth */
 }
 
 label {
     display: block;
     margin-bottom: 10px; /* Increased margin for better spacing */
     color: #666666; /* Label color */
+    font-size: 1.5em; /* Font size matching the title */
 }
 
 input[type="text"],
@@ -50,6 +53,8 @@ input[type="tel"] {
     border: 1px solid #cccccc; /* Border color */
     border-radius: 5px;
     box-sizing: border-box;
+    background-color: #f9f9f9; /* Light gray background */
+    font-size: 1.5em; /* Font size matching the title */
 }
 
 input[type="submit"] {
@@ -61,14 +66,12 @@ input[type="submit"] {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease; /* Transition for hover effect */
-}
-
-input[type="submit"]:hover {
-    background-color: #0056b3;
+    font-size: 1.5em; /* Font size matching the title */
 }
 
 .about-section,
 .products-section {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
@@ -76,11 +79,22 @@ input[type="submit"]:hover {
     margin-bottom: 20px; /* Add space between sections */
 }
 
-.about-section h3,
+.about-section h3
 .products-section h3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
     color: #333333; /* Text color */
     margin-bottom: 20px; /* Add a small margin below the heading */
+    font-size: 2.5em; /* Font size matching the title */
+}
+
+.about-section h4
+.products-section h4 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: #333333; /* Text color */
+    margin-bottom: 10px; /* Add a small margin below the heading */
+    font-size: 1.5em; /* Font size matching the title */
 }
 
 .about-content,
@@ -101,14 +115,18 @@ input[type="submit"]:hover {
     cursor: pointer;
     text-decoration: none; /* Remove default underline */
     transition: background-color 0.3s ease; /* Transition for hover effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Button shadow */
+    font-size: 1.5em; /* Font size matching the title */
 }
 
 .button:hover {
     background-color: #0056b3;
+    transform: translateY(-2px); /* Move the button slightly up on hover */
 }
 
 /* Sidebar styling */
 .sidebar {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     height: 100%;
     width: 250px;
     position: fixed;
@@ -121,19 +139,22 @@ input[type="submit"]:hover {
     border-top-left-radius: 20px; /* Curved top-left corner */
     border-bottom-left-radius: 20px; /* Curved bottom-left corner */
 }
+
 /* Style for the links in the sidebar */
 .sidebar a {
     padding: 10px 15px;
     text-decoration: none;
-    font-size: 16px; /* Slightly smaller font size */
+    font-size: 1.5em; /* Font size matching the title */
     color: #fff; /* White text */
     display: block;
     transition: background-color 0.3s; /* Smooth background color transition */
 }
+
 /* Change the color of links when hovered */
 .sidebar a:hover {
     background-color: #0056b3; /* Darker background on hover */
 }
+
 /* Content area style */
 .content {
     margin-left: 250px; /* Adjust this value to match the width of the sidebar */
