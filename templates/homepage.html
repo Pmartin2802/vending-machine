@@ -5,32 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
-
 </head>
 <body class="homepage">
     <!-- Sidebar -->
     <div class="sidebar">
-        <a href="/homepage" class="button">Home</a>
-        <a href="/about" class="button">About Us</a>
-        <a href="/products" class="button">Our Products</a>
+        <a href="/homepage" class="button">Parlours</a>
         <a href="/waitlist" class="button">Join Waitlist</a>
     </div>
 
-    <!-- Main Content -->
-    <div class="container">
-        <h2>Health Parlour</h2>
-        
-        <div class="flex-container">
-            <div class="about-content">
-                <h3>Welcome to Health Parlour.</h3>
-                <h4>The current waitlist for the product is: number</h4>
+    <div class="content">
+        <section id="parlours">
+            <h2>Parlours</h2>
+            <div class="textbox">
+                <img src="images/smoothie-machine.jpg" alt="Smoothie Machine">
+                <p>
+                    Transform your space with our fully automated smoothie bar! Enjoy the benefits of having a 24/7 profit generator with minimal time commitment.
+                </p>
+                <ul>
+                    <li>Minimal time commitment</li>
+                    <li>Increased nutritional value</li>
+                    <li>Encourages sustainability</li>
+                    <li>Low start-up costs</li>
+                </ul>
             </div>
-        </div>
-        
-        <div class="button-container">
-            <a href="/waitlist" class="button">Join Waitlist</a>
-        </div>
+        </section>
+        <section id="ingredients">
+            <h2>Ingredients</h2>
+            <div class="textbox">
+                <img src="images/organic-ingredients.jpg" alt="Organic Ingredients">
+                <p>
+                    Our ingredients are carefully sourced and freeze-dried to preserve their organic goodness. Choose from a variety of fruits and add Whey Protein for a boost!
+                </p>
+            </div>
+        </section>
+        <section id="ai-controller">
+            <h2>AI Controller</h2>
+            <div class="textbox">
+                <img src="images/ai-controller.jpg" alt="AI Controller">
+                <p>
+                    Track sales, monitor stock, and keep up with consumer needs seamlessly with our AI Controller. Stay ahead of the game and optimize your operations.
+                </p>
+            </div>
+        </section>
+        <section id="servicing">
+            <h2>Servicing</h2>
+            <div class="textbox">
+                <img src="images/servicing.jpg" alt="Servicing">
+                <p>
+                    Our machines require minimal servicing, ensuring smooth operation. With regular stock deliveries, you'll never run out of smoothies!
+                </p>
+            </div>
+        </section>
     </div>
-
 </body>
 </html>
